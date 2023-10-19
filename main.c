@@ -3,14 +3,14 @@
 
 int main(void)
 {
-  int flag=1;
-  int y=3; 
-  while (flag!=0)
-  {
-        flag=0;
-        }
-  y=4;
-  
+    int i;
+    
+    for (i=0;i<5;i++)
+    {
+        static int temp =1;
+         printf("temp = %d\n",temp);
+         temp++;
+         }
 
   system("PAUSE");	
   return 0;
